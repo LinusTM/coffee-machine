@@ -1,8 +1,8 @@
 namespace coffee_machine;
 
 interface IFilter {
-    string FilterType { get; }
-    string LifeSpan { get; }
+    double Durability { get; }
+    string Exception { get; }
 
-    public void FilterContent(string contentException);
+    public string FilterContent();
 }
